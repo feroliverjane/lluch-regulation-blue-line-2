@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     TEST_DATABASE_URL: str = "postgresql://lluch_user:lluch_pass@localhost:5432/lluch_regulation_test"
     
     # CORS
-    ALLOWED_ORIGINS: Union[List[str], str] = ["http://localhost:5173", "http://localhost:3000"]
+    ALLOWED_ORIGINS: Union[List[str], str] = ["http://localhost:5174", "http://localhost:5175", "http://localhost:8002", "http://localhost:3000"]
     
     @field_validator('ALLOWED_ORIGINS', mode='before')
     @classmethod
