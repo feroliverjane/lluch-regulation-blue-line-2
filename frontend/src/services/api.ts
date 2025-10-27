@@ -7,7 +7,7 @@ import type {
   CompositeComparison
 } from '../types'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001'
 const API_PREFIX = '/api'
 
 const api = axios.create({
